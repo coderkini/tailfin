@@ -1,0 +1,21 @@
+[versions]
+junit5 = "5.7.0"
+spring-boot = "3.3.1"
+spring-dependency-management = "1.1.5"
+postgresql = "42.2.5"
+flyway = "10.10.0"
+hypersistence-tsid = "2.1.2"
+moneta = "1.4.4"
+
+[libraries]
+junit5 = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit5" }
+junit5-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit5" }
+postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
+flyway-core = { module = "org.flywaydb:flyway-core", version.ref = "flyway" }
+flyway-postgresql = { module = "org.flywaydb:flyway-database-postgresql", version.ref = "flyway" }
+hypersistence-tsid = { module = "io.hypersistence:hypersistence-tsid", version.ref = "hypersistence-tsid" }
+moneta = { module = "org.javamoney:moneta", version.ref = "moneta" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }
